@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@DisplayName("Tests for 'world' DB in MySQL")
 public class WorldDBTests extends SetupWorldTests {
 
     private final String testTableName = "government";
@@ -82,7 +83,7 @@ public class WorldDBTests extends SetupWorldTests {
 
     @Test
     @Owner("Viktoriya")
-    @Order(1)
+    @Order(2)
     @Flaky
     @Feature("Select request")
     @Severity(SeverityLevel.MINOR)
